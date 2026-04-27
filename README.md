@@ -6,8 +6,8 @@
 
 아이디어를 수집하고, 발전시키고, 실현하는 공간
 
-[![Total Ideas](https://img.shields.io/badge/Total_Ideas-49-blue)](#)
-[![Categories](https://img.shields.io/badge/Categories-6+-purple)](#)
+[![Total Ideas](https://img.shields.io/badge/Total_Ideas-254-blue)](#)
+[![Categories](https://img.shields.io/badge/Categories-9-purple)](#)
 [![Status](https://img.shields.io/badge/Status-Collecting-yellow)](#)
 
 </div>
@@ -27,12 +27,15 @@
 
 | 카테고리 | 설명 | 아이디어 수 |
 |----------|------|:----------:|
-| 🌐 3D 글로브 | CesiumJS / Globe.gl 기반 지구 시각화 및 게임 | 49 |
-| 🎮 웹 게임 | 브라우저에서 즐기는 게임 | - |
-| 📊 데이터 시각화 | 인터랙티브 대시보드 & 시각화 | - |
-| 🤖 AI 에이전트 | 자율형 AI 에이전트 프로젝트 | - |
-| ⚙️ 자동화 | 반복 업무 자동화 도구 | - |
-| 📱 유틸리티 | 일상 유용 도구 & 서비스 | - |
+| 🌐 [3D 글로브](3D_Globe_Project_Ideas.md) | CesiumJS / Globe.gl 기반 지구 시각화 및 게임 | 49 |
+| 🎮 [웹 게임](Web_Game_Project_Ideas.md) | 브라우저에서 즐기는 창의적 게임 | 27 |
+| 📊 [데이터 시각화](Data_Visualization_Project_Ideas.md) | 인터랙티브 대시보드 & 시각화 | 24 |
+| 🤖 [AI 에이전트](AI_Agent_Project_Ideas.md) | AI 기반 자동화 & 도구 | 27 |
+| 📚 [교육 & 학습](Education_Learning_Project_Ideas.md) | 언어/수학/과학/코딩 학습 도구 | 22 |
+| 🎵 [오디오 & 음악](Audio_Music_Project_Ideas.md) | Web Audio 기반 음악/사운드 프로젝트 | 25 |
+| 🎨 [크리에이티브 & 아트](Creative_Art_Project_Ideas.md) | 드로잉/제너러티브아트/이미지편집 | 25 |
+| ⚙️ [생산성 & 유틸리티](Productivity_Utility_Project_Ideas.md) | 시간관리/문서/개발자도구/생활유틸 | 25 |
+| 🔬 [과학 & 시뮬레이션](Science_Simulation_Project_Ideas.md) | 물리/화학/천문/환경 시뮬레이션 | 25 |
 
 > 📌 카테고리는 지속적으로 확장됩니다.
 
@@ -126,11 +129,37 @@ ICBM2가 구현 난이도 + 재미 + 독창성을 기준으로 선정한 Top 7
 
 ```
 idea-bank/
-├── README.md                          # 이 파일
-├── 3D_Globe_Project_Ideas.md          # 3D 글로브 아이디어 상세 (49개)
-├── 3D_Globe_Project_Ideas.pdf         # 3D 글로브 아이디어 PDF 요약
-└── (앞으로 더 추가될 카테고리...)
+├── README.md                              # 이 파일
+├── IDEA_GENERATION_GUIDE.md               # 🧭 AI 에이전트용 통합 가이드 (이 파일 하나로 중복 없는 아이디어 생성 가능)
+├── IDEA_INDEX.md                          # 📋 전체 아이디어 마스터 인덱스 (254개)
+├── EXISTING_REPOS.md                      # 📋 기존 저장소 목록 (141개, 중복 금지)
+├── 3D_Globe_Project_Ideas.md              # 3D 글로브 아이디어 (49개)
+├── 3D_Globe_Project_Ideas.pdf             # 3D 글로브 아이디어 PDF 요약
+├── Web_Game_Project_Ideas.md              # 웹 게임 아이디어 (27개)
+├── Data_Visualization_Project_Ideas.md    # 데이터 시각화 아이디어 (24개)
+├── AI_Agent_Project_Ideas.md              # AI 에이전트 아이디어 (27개)
+├── Education_Learning_Project_Ideas.md    # 교육 & 학습 아이디어 (22개)
+├── Audio_Music_Project_Ideas.md           # 오디오 & 음악 아이디어 (25개)
+├── Creative_Art_Project_Ideas.md          # 크리에이티브 & 아트 아이디어 (25개)
+├── Productivity_Utility_Project_Ideas.md  # 생산성 & 유틸리티 아이디어 (25개)
+└── Science_Simulation_Project_Ideas.md    # 과학 & 시뮬레이션 아이디어 (25개)
 ```
+
+---
+
+## 🔄 아이디어 중복 방지 시스템
+
+새로운 아이디어를 생성할 때 다음 파일들을 참조하여 중복을 방지합니다:
+
+1. **[IDEA_GENERATION_GUIDE.md](IDEA_GENERATION_GUIDE.md)** — 🧭 AI 에이전트용 통합 가이드 (이 파일 하나로 충분)
+2. **[IDEA_INDEX.md](IDEA_INDEX.md)** — 전체 254개 아이디어 마스터 인덱스
+3. **[EXISTING_REPOS.md](EXISTING_REPOS.md)** — sigco3111 전체 141개 저장소 목록
+
+**아이디어 생성 파이프라인:**
+1. 에이전트에게 `IDEA_GENERATION_GUIDE.md` 제공 (Section A: 141개 기존 저장소 + Section B: 254개 기존 아이디어 + 형식 템플릿 + 규칙 모두 포함)
+2. 아이디어 초안 생성
+3. 교차 검증 에이전트가 인덱스와 비교하여 중복 확인
+4. 최종 파일 작성 + `IDEA_INDEX.md` + `IDEA_GENERATION_GUIDE.md` 업데이트
 
 ---
 
@@ -140,8 +169,9 @@ idea-bank/
 
 - **비용:** 무료 (오픈소스 + 무료 API + Vercel Free)
 - **배포:** Vercel 또는 GitHub Pages
-- **프론트엔드:** HTML/CSS/JS, React, Next.js
-- **3D/시각화:** CesiumJS, Globe.gl, Three.js, D3.js
+- **프론트엔드:** HTML/CSS/JS, React, Next.js, Vue.js, Svelte
+- **3D/시각화:** CesiumJS, Globe.gl, Three.js, D3.js, Chart.js
+- **오디오:** Web Audio API, Tone.js, Howler.js
 - **데이터:** REST Countries, OpenSky, USGS, NASA, WHO 등 무료 API
 - **백엔드:** 최소화 (localStorage / Supabase Free / Vercel Serverless)
 
@@ -151,17 +181,24 @@ idea-bank/
 
 <div align="center">
 
-| 일반 프로젝트 | 게임 프로젝트 | 총계 |
-|:------------:|:------------:|:----:|
-| 19 | 30 | **49** |
+| 3D 글로브 | 웹 게임 | 데이터 시각화 | AI 에이전트 | 교육 | 오디오 | 아트 | 생산성 | 과학 | 총계 |
+|:---------:|:-------:|:------------:|:-----------:|:----:|:------:|:----:|:------:|:----:|:----:|
+| 49 | 27 | 24 | 27 | 22 | 25 | 25 | 25 | 25 | **254** |
 
 </div>
 
 <div align="center">
 
 ```
-시각화  ████████████████ 19
-게임    ████████████████████████████ 30
+3D 글로브  ████████████████████████████████████████████████ 49
+웹 게임    ███████████████████████████ 27
+AI 에이전트 ███████████████████████████ 27
+오디오     █████████████████████████ 25
+아트       █████████████████████████ 25
+생산성     █████████████████████████ 25
+과학       █████████████████████████ 25
+데이터시각화 ████████████████████████ 24
+교육       ██████████████████████ 22
 ```
 
 </div>
