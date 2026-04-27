@@ -1,6 +1,6 @@
 # 🌍 3D 글로브 웹게임/프로젝트 아이디어 모음
 
-> CesiumJS / Globe.gl / Three.js 기반 GitHub + Vercel 배포 가능 프로젝트 아이디어  
+> Globe.gl / Three.js 기반 GitHub + Vercel 배포 가능 프로젝트 아이디어  
 > 생성일: 2026-04-22 | 작성: ICBM2
 
 ---
@@ -58,7 +58,7 @@
 
 ### 3. 💣 nuke-globe — 핵실험 역사 타임라인
 
-**기술:** CesiumJS
+**기술:** Globe.gl
 
 **내용:**
 - 1945~현재까지 전 세계 핵실험 위치를 시간순으로 재생
@@ -72,7 +72,7 @@
 
 ### 4. 🏛️ empire-timeline — 역사 제국 영토 변천 지도
 
-**기술:** CesiumJS + 커스텀 폴리곤 렌더링
+**기술:** Three.js + 커스텀 폴리곤 렌더링
 
 **내용:**
 - 로마, 몽골, 오스만, 대영제국 등 주요 제국의 영토를 시간축으로 재생
@@ -80,7 +80,7 @@
 - 영토 넓이 그래프 하단 표시
 - "이 시기에 동시대에 존재하던 제국들" 비교 모드
 
-**포인트:** 역사 교육용으로 강력. Cesium의 폴리곤 + 타임라인 기능에 딱 맞음
+**포인트:** 역사 교육용으로 강력. Three.js의 폴리곤 + 타임라인 기능에 딱 맞음
 
 ---
 
@@ -114,7 +114,7 @@
 
 ### 7. 📡 satellite-live — 위성이 지금 당장 뭘 보고 있나
 
-**기술:** CesiumJS + CelesTrak TLE 데이터 (무료)
+**기술:** Globe.gl + CelesTrak TLE 데이터 (무료)
 
 **내용:**
 - 궤도 위성 실시간 위치 + 각 위성의 지상 커버리지 원 표시
@@ -170,7 +170,7 @@
 
 ### 11. 🏗️ wonder-build — 세계 불가사의 건설 타임라인
 
-**기술:** CesiumJS + 폴리곤 3D 모델
+**기술:** Three.js + 3D 모델
 
 **내용:**
 - 피라미드, 만리장성, 콜로세움, 타지마할 등을 3D 지도 위에 배치
@@ -198,7 +198,7 @@
 
 ### 13. 🚀 rocket-trace — 우주발사체 발사/추락 궤적 시각화
 
-**기술:** CesiumJS
+**기술:** Globe.gl
 
 **내용:**
 - SpaceX, NASA, ROSCOSMOS 등 발사체 궤적을 3D로 재생
@@ -226,15 +226,15 @@
 
 ### 15. 🏟️ stadium-globe — 전 세계 스타디움 3D 투어
 
-**기술:** Globe.gl + CesiumJS 3D Tiles
+**기술:** Globe.gl + Three.js 3D 모델
 
 **내용:**
 - 수용인원 Top 100 스타디움을 지도 위에 마커
-- 클릭 시 Cesium 3D Tiles로 해당 구역 줌인 + 스타디움 외관 렌더링
+- 클릭 시 Three.js 3D 모델로 해당 구역 줌인 + 스타디움 외관 렌더링
 - 수용인원, 건축년도, 홈팀, 주요 이벤트 정보
 - "올림픽 개최 도시만 보기" 필터
 
-**포인트:** Cesium의 3D Tiles를 활용하면 실제 건물 모델 로딩 가능. 스포츠 팬 타겟
+**포인트:** Three.js의 3D 모델을 활용하면 실제 건물 모델 로딩 가능. 스포츠 팬 타겟
 
 ---
 
@@ -282,7 +282,7 @@
 
 ### 19. 🧲 gravity-globe — 지구 중력 이상치/지자기장 시각화
 
-**기술:** CesiumJS + 커스텀 셰이더
+**기술:** Three.js + 커스텀 셰이더
 
 **내용:**
 - 지구 중력장 변화를 색상 그라디언트로 표시
@@ -337,7 +337,7 @@
 
 ### 3. 🚀 colony-mars — 화성 식민지 건설 게임
 
-**기술:** CesiumJS (화성 지형 지원)  
+**기술:** Three.js (지구 외 행성 지형 지원)  
 **난이도:** 높음
 
 **게임 루프:** 착륙 → 생존 → 확장 → 자급자족 달성 (승리 조건)
@@ -348,7 +348,7 @@
 - 태양폭풍, 먼지폭풍 등 화성 특유 재난 이벤트
 - 지구와의 통신 지연 시뮬레이션 (명령 입력 후 실제 도착까지 대기)
 
-**포인트:** Cesium은 지구뿐 아니라 화성/달 지형도 렌더링 가능. "지구 밖 게임"이라 독창적
+**포인트:** Three.js는 지구뿐 아니라 화성/달 지형도 렌더링 가능. "지구 밖 게임"이라 독창적
 
 ---
 
@@ -1164,23 +1164,23 @@ AI 5개 문명 동시 플레이
 |---|------|------|------|--------|
 | 1 | cable-globe | 해저 인터넷 케이블 | Globe.gl | 보통 |
 | 2 | sky-radar | 실시간 항공기 추적 | Globe.gl | 보통 |
-| 3 | nuke-globe | 핵실험 역사 타임라인 | CesiumJS | 보통 |
-| 4 | empire-timeline | 역사 제국 영토 변천 | CesiumJS | 높음 |
+| 3 | nuke-globe | 핵실험 역사 타임라인 | Globe.gl | 보통 |
+| 4 | empire-timeline | 역사 제국 영토 변천 | Three.js | 높음 |
 | 5 | tsunami-sim | 쓰나미 파동 전파 | Globe.gl | 보통 |
 | 6 | migration-globe | 동물 이동 경로 | Globe.gl | 보통 |
-| 7 | satellite-live | 위성 지상 피사체 | CesiumJS | 보통 |
+| 7 | satellite-live | 위성 지상 피사체 | Globe.gl | 보통 |
 | 8 | volcano-pulse | 화산 활동 모니터 | Globe.gl | 보통 |
 | 9 | lang-globe | 언어 지도 + 소리 | Globe.gl | 보통 |
 | 10 | pirate-ship | 해적 항로 추적 | Globe.gl | 보통 |
-| 11 | wonder-build | 불가사의 건설 타임라인 | CesiumJS | 높음 |
+| 11 | wonder-build | 불가사의 건설 타임라인 | Three.js | 높음 |
 | 12 | deep-ocean | 심해 탐험 지도 | Globe.gl | 보통 |
-| 13 | rocket-trace | 우주발사체 궤적 | CesiumJS | 보통 |
+| 13 | rocket-trace | 우주발사체 궤적 | Globe.gl | 보통 |
 | 14 | current-globe | 해양 해류 시각화 | Globe.gl | 높음 |
-| 15 | stadium-globe | 스타디움 3D 투어 | CesiumJS | 높음 |
+| 15 | stadium-globe | 스타디움 3D 투어 | Three.js | 높음 |
 | 16 | signal-globe | 전파 도달 범위 | Globe.gl | 보통 |
 | 17 | outbreak-trace | 전염병 확산 시뮬 | Globe.gl | 보통 |
 | 18 | dark-sky | 빛공해/밤하늘 지도 | Globe.gl | 보통 |
-| 19 | gravity-globe | 중력/지자기장 시각화 | CesiumJS | 높음 |
+| 19 | gravity-globe | 중력/지자기장 시각화 | Three.js | 높음 |
 
 ### 게임 프로젝트 (30개)
 
@@ -1188,7 +1188,7 @@ AI 5개 문명 동시 플레이
 |---|------|------|------|--------|-----------|
 | 1 | city-tycoon | 경영 | Globe.gl | 높음 | SimCity + 글로브 |
 | 2 | bio-plague | 전쟁 | Globe.gl | 높음 | Plague Inc. 글로브 |
-| 3 | colony-mars | 경영 | CesiumJS | 높음 | 화성 지형 게임 |
+| 3 | colony-mars | 경영 | Three.js | 높음 | 화성 지형 게임 |
 | 4 | trade-winds | 경제 | Globe.gl | 보통 | 대항해시대 무역 |
 | 5 | fortress-earth | 전쟁 | Globe.gl | 보통 | 외계 침공 타워디펜스 |
 | 6 | guess-country | 퀴즈 | Globe.gl | 쉬움 | 국가 위치 맞추기 |

@@ -6,8 +6,8 @@
 
 아이디어를 수집하고, 발전시키고, 실현하는 공간
 
-[![Total Ideas](https://img.shields.io/badge/Total_Ideas-254-blue)](#)
-[![Categories](https://img.shields.io/badge/Categories-9-purple)](#)
+[![Total Ideas](https://img.shields.io/badge/Total_Ideas-279-blue)](#)
+[![Categories](https://img.shields.io/badge/Categories-10-purple)](#)
 [![Status](https://img.shields.io/badge/Status-Collecting-yellow)](#)
 
 </div>
@@ -27,7 +27,7 @@
 
 | 카테고리 | 설명 | 아이디어 수 |
 |----------|------|:----------:|
-| 🌐 [3D 글로브](3D_Globe_Project_Ideas.md) | CesiumJS / Globe.gl 기반 지구 시각화 및 게임 | 49 |
+| 🌐 [3D 글로브](3D_Globe_Project_Ideas.md) | Globe.gl / Three.js 기반 지구 시각화 및 게임 | 49 |
 | 🎮 [웹 게임](Web_Game_Project_Ideas.md) | 브라우저에서 즐기는 창의적 게임 | 27 |
 | 📊 [데이터 시각화](Data_Visualization_Project_Ideas.md) | 인터랙티브 대시보드 & 시각화 | 24 |
 | 🤖 [AI 에이전트](AI_Agent_Project_Ideas.md) | AI 기반 자동화 & 도구 | 27 |
@@ -36,78 +36,36 @@
 | 🎨 [크리에이티브 & 아트](Creative_Art_Project_Ideas.md) | 드로잉/제너러티브아트/이미지편집 | 25 |
 | ⚙️ [생산성 & 유틸리티](Productivity_Utility_Project_Ideas.md) | 시간관리/문서/개발자도구/생활유틸 | 25 |
 | 🔬 [과학 & 시뮬레이션](Science_Simulation_Project_Ideas.md) | 물리/화학/천문/환경 시뮬레이션 | 25 |
+| 🗺️ [deck.gl 지도 시각화](deckGL_Project_Ideas.md) | deck.gl / MapLibre 기반 대규모 지도 데이터 시각화 | 25 |
 
 > 📌 카테고리는 지속적으로 확장됩니다.
 
 ---
 
-## 📚 아이디어 목록
+## 🤖 AI 에이전트로 새 아이디어 생성하기
 
-### 🌐 3D 글로브 프로젝트 (49개)
+이 저장소의 핵심 목적은 **AI 에이전트가 중복 없이 새 프로젝트 아이디어를 생성**하는 것입니다.
 
-CesiumJS, Globe.gl, Three.js를 활용한 지구 기반 프로젝트 아이디어 모음입니다.
+### 사용법
 
-| # | Name | 설명 | 종류 | 난이도 |
-|---|------|------|------|--------|
-| 1 | [cable-globe](3D_Globe_Project_Ideas.md) | 해저 인터넷 케이블 지도 | 시각화 | 보통 |
-| 2 | [sky-radar](3D_Globe_Project_Ideas.md) | 실시간 항공기 추적 | 시각화 | 보통 |
-| 3 | [nuke-globe](3D_Globe_Project_Ideas.md) | 핵실험 역사 타임라인 | 시각화 | 보통 |
-| 4 | [empire-timeline](3D_Globe_Project_Ideas.md) | 역사 제국 영토 변천 | 시각화 | 높음 |
-| 5 | [tsunami-sim](3D_Globe_Project_Ideas.md) | 쓰나미 파동 전파 | 시각화 | 보통 |
-| 6 | [migration-globe](3D_Globe_Project_Ideas.md) | 동물 이동 경로 | 시각화 | 보통 |
-| 7 | [satellite-live](3D_Globe_Project_Ideas.md) | 위성 지상 피사체 추적 | 시각화 | 보통 |
-| 8 | [volcano-pulse](3D_Globe_Project_Ideas.md) | 화산 활동 모니터 | 시각화 | 보통 |
-| 9 | [lang-globe](3D_Globe_Project_Ideas.md) | 언어 지도 + 소리 | 시각화 | 보통 |
-| 10 | [pirate-ship](3D_Globe_Project_Ideas.md) | 해적 항로 추적 | 게임 | 보통 |
-| 11 | [wonder-build](3D_Globe_Project_Ideas.md) | 불가사의 건설 타임라인 | 시각화 | 높음 |
-| 12 | [deep-ocean](3D_Globe_Project_Ideas.md) | 심해 탐험 지도 | 시각화 | 보통 |
-| 13 | [rocket-trace](3D_Globe_Project_Ideas.md) | 우주발사체 궤적 | 시각화 | 보통 |
-| 14 | [current-globe](3D_Globe_Project_Ideas.md) | 해양 해류 시각화 | 시각화 | 높음 |
-| 15 | [stadium-globe](3D_Globe_Project_Ideas.md) | 스타디움 3D 투어 | 시각화 | 높음 |
-| 16 | [signal-globe](3D_Globe_Project_Ideas.md) | 전파 도달 범위 | 시각화 | 보통 |
-| 17 | [outbreak-trace](3D_Globe_Project_Ideas.md) | 전염병 확산 시뮬 | 시각화 | 보통 |
-| 18 | [dark-sky](3D_Globe_Project_Ideas.md) | 빛공해/밤하늘 지도 | 시각화 | 보통 |
-| 19 | [gravity-globe](3D_Globe_Project_Ideas.md) | 중력/지자기장 시각화 | 시각화 | 높음 |
-| 20 | [city-tycoon](3D_Globe_Project_Ideas.md) | 도시 건설 경영 | 게임 | 높음 |
-| 21 | [bio-plague](3D_Globe_Project_Ideas.md) | 바이러스 vs 방어 | 게임 | 높음 |
-| 22 | [colony-mars](3D_Globe_Project_Ideas.md) | 화성 식민지 건설 | 게임 | 높음 |
-| 23 | [trade-winds](3D_Globe_Project_Ideas.md) | 대항해시대 무역 | 게임 | 보통 |
-| 24 | [fortress-earth](3D_Globe_Project_Ideas.md) | 외계 침공 방어 | 게임 | 보통 |
-| 25 | [guess-country](3D_Globe_Project_Ideas.md) | 국가 위치 퀴즈 | 게임 | 쉬움 |
-| 26 | [eco-wars](3D_Globe_Project_Ideas.md) | 생태계 영토 전쟁 | 게임 | 보통 |
-| 27 | [stock-nations](3D_Globe_Project_Ideas.md) | 국가 경제 주식 | 게임 | 보통 |
-| 28 | [spy-wars](3D_Globe_Project_Ideas.md) | 냉전 스파이 | 게임 | 보통 |
-| 29 | [mega-project](3D_Globe_Project_Ideas.md) | 인프라 건설 경영 | 게임 | 보통 |
-| 30 | [food-crisis](3D_Globe_Project_Ideas.md) | 식량 위기 경영 | 게임 | 보통 |
-| 31 | [corp-wars](3D_Globe_Project_Ideas.md) | 글로벌 기업 전쟁 | 게임 | 보통 |
-| 32 | [space-race](3D_Globe_Project_Ideas.md) | 우주 경주 | 게임 | 높음 |
-| 33 | [rebel-control](3D_Globe_Project_Ideas.md) | 반란 vs 정부 | 게임 | 높음 |
-| 34 | [election-globe](3D_Globe_Project_Ideas.md) | 대선 시뮬레이션 | 게임 | 보통 |
-| 35 | [oil-politics](3D_Globe_Project_Ideas.md) | 석유 정치 시뮬 | 게임 | 보통 |
-| 36 | [climate-negotiation](3D_Globe_Project_Ideas.md) | 기후 협상 | 게임 | 보통 |
-| 37 | [drug-empire](3D_Globe_Project_Ideas.md) | 카르텔 경영 | 게임 | 보통 |
-| 38 | [cyber-war](3D_Globe_Project_Ideas.md) | 사이버 전쟁 | 게임 | 보통 |
-| 39 | [smuggler-empire](3D_Globe_Project_Ideas.md) | 밀수 제국 | 게임 | 보통 |
-| 40 | [ancient-conquest](3D_Globe_Project_Ideas.md) | 고대 제국 정복 | 게임 | 높음 |
+에이전트에게 다음과 같이 요청하세요:
 
-<details>
-<summary>📋 더보기 (9개)</summary>
+```
+IDEA_GENERATION_GUIDE.md를 참고해서 [새 카테고리] 아이디어 파일을 만들어줘
+```
 
-| # | Name | 설명 | 종류 | 난이도 |
-|---|------|------|------|--------|
-| 41 | [guess-where](3D_Globe_Project_Ideas.md) | 힌트로 국가 맞추기 | 게임 | 쉬움 |
-| 42 | [capital-drop](3D_Globe_Project_Ideas.md) | 수도 위치 클릭 | 게임 | 보통 |
-| 43 | [country-rush](3D_Globe_Project_Ideas.md) | 제한시간 국가 찾기 | 게임 | 보통 |
-| 44 | [distance-duel](3D_Globe_Project_Ideas.md) | 거리 추측 대결 | 게임 | 보통 |
-| 45 | [flight-planner](3D_Globe_Project_Ideas.md) | 최소 예산 항공계획 | 게임 | 보통 |
-| 46 | [nation-investor](3D_Globe_Project_Ideas.md) | 국가 경영 투자 | 게임 | 보통 |
-| 47 | [resource-war](3D_Globe_Project_Ideas.md) | 자원 점령 전쟁 | 게임 | 높음 |
-| 48 | [trade-empire](3D_Globe_Project_Ideas.md) | 항로 무역 경영 | 게임 | 보통 |
-| 49 | [sanctions-war](3D_Globe_Project_Ideas.md) | 경제 제재 카드게임 | 게임 | 높음 |
+**하나의 파일이면 충분합니다.** `IDEA_GENERATION_GUIDE.md`에 다음 내용이 모두 포함되어 있습니다:
+- Section A: 기존 141개 저장소 목록 (중복 금지)
+- Section B: 기존 254개 아이디어 목록 (중복 금지)
+- 아이디어 형식 템플릿
+- 생성 규칙 (한국어, 무료 기술, Vercel 배포)
 
-</details>
+### 아이디어 생성 파이프라인
 
----
+1. 에이전트에게 `IDEA_GENERATION_GUIDE.md` 제공
+2. 아이디어 초안 생성
+3. 교차 검증으로 중복 확인
+4. 최종 파일 작성 + `IDEA_INDEX.md` + `IDEA_GENERATION_GUIDE.md` 업데이트
 
 ## 🏆 추천 프로젝트
 
@@ -142,7 +100,8 @@ idea-bank/
 ├── Audio_Music_Project_Ideas.md           # 오디오 & 음악 아이디어 (25개)
 ├── Creative_Art_Project_Ideas.md          # 크리에이티브 & 아트 아이디어 (25개)
 ├── Productivity_Utility_Project_Ideas.md  # 생산성 & 유틸리티 아이디어 (25개)
-└── Science_Simulation_Project_Ideas.md    # 과학 & 시뮬레이션 아이디어 (25개)
+├── Science_Simulation_Project_Ideas.md    # 과학 & 시뮬레이션 아이디어 (25개)
+└── deckGL_Project_Ideas.md                # deck.gl 지도 시각화 아이디어 (25개)
 ```
 
 ---
@@ -170,7 +129,7 @@ idea-bank/
 - **비용:** 무료 (오픈소스 + 무료 API + Vercel Free)
 - **배포:** Vercel 또는 GitHub Pages
 - **프론트엔드:** HTML/CSS/JS, React, Next.js, Vue.js, Svelte
-- **3D/시각화:** CesiumJS, Globe.gl, Three.js, D3.js, Chart.js
+- **3D/시각화:** Globe.gl, Three.js, D3.js, Chart.js, deck.gl
 - **오디오:** Web Audio API, Tone.js, Howler.js
 - **데이터:** REST Countries, OpenSky, USGS, NASA, WHO 등 무료 API
 - **백엔드:** 최소화 (localStorage / Supabase Free / Vercel Serverless)
@@ -181,9 +140,9 @@ idea-bank/
 
 <div align="center">
 
-| 3D 글로브 | 웹 게임 | 데이터 시각화 | AI 에이전트 | 교육 | 오디오 | 아트 | 생산성 | 과학 | 총계 |
-|:---------:|:-------:|:------------:|:-----------:|:----:|:------:|:----:|:------:|:----:|:----:|
-| 49 | 27 | 24 | 27 | 22 | 25 | 25 | 25 | 25 | **254** |
+| 3D 글로브 | 웹 게임 | 데이터 시각화 | AI 에이전트 | 교육 | 오디오 | 아트 | 생산성 | 과학 | deck.gl | 총계 |
+|:---------:|:-------:|:------------:|:-----------:|:----:|:------:|:----:|:------:|:----:|:-------:|:----:|
+| 49 | 27 | 24 | 27 | 22 | 25 | 25 | 25 | 25 | 25 | **279** |
 
 </div>
 
@@ -193,6 +152,7 @@ idea-bank/
 3D 글로브  ████████████████████████████████████████████████ 49
 웹 게임    ███████████████████████████ 27
 AI 에이전트 ███████████████████████████ 27
+deck.gl    █████████████████████████ 25
 오디오     █████████████████████████ 25
 아트       █████████████████████████ 25
 생산성     █████████████████████████ 25
