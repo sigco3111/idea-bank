@@ -1,0 +1,89 @@
+{
+  "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-openagent/dev/assets/oh-my-openagent.schema.json",
+  "agents": {
+    "sisyphus": {
+      "model": "nvidia/qwen/qwen3-coder-480b-a35b-instruct",
+      "fallback_models": ["github-copilot/gpt-4.1"]
+    },
+    "oracle": {
+      "model": "github-copilot/gpt-4.1",
+      "fallback_models": ["nvidia/llama-3.3-nemotron-super-49b-v1"]
+    },
+    "librarian": {
+      "model": "nvidia/qwen/qwen3-coder-480b-a35b-instruct",
+      "fallback_models": ["github-copilot/gpt-5-mini"]
+    },
+    "explore": {
+      "model": "github-copilot/gpt-4o",
+      "fallback_models": ["github-copilot/gpt-4o"]
+    },
+    "multimodal-looker": {
+      "model": "github-copilot/gpt-4o",
+      "fallback_models": ["nvidia/meta/llama-3.2-90b-vision-instruct"]
+    },
+    "prometheus": {
+      "model": "nvidia/qwen/qwen3-coder-480b-a35b-instruct",
+      "fallback_models": ["github-copilot/gpt-4.1"]
+    },
+    "metis": {
+      "model": "github-copilot/gpt-4.1",
+      "fallback_models": ["github-copilot/gpt-5-mini"]
+    },
+    "momus": {
+      "model": "nvidia/qwen/qwen3-coder-480b-a35b-instruct",
+      "fallback_models": ["github-copilot/gpt-4.1"]
+    },
+    "atlas": {
+      "model": "nvidia/qwen/qwen3-coder-480b-a35b-instruct",
+      "fallback_models": ["github-copilot/gpt-4.1"]
+    },
+    "sisyphus-junior": {
+      "model": "github-copilot/gpt-4o",
+      "fallback_models": ["github-copilot/gpt-5-mini"]
+    }
+  },
+  "categories": {
+    "visual-engineering": {
+      "model": "github-copilot/gpt-4o",
+      "fallback_models": ["nvidia/meta/llama-3.2-90b-vision-instruct"]
+    },
+    "ultrabrain": {
+      "model": "github-copilot/gpt-4.1",
+      "fallback_models": ["nvidia/qwen/qwen3-coder-480b-a35b-instruct"]
+    },
+    "deep": {
+      "model": "nvidia/qwen/qwen3-coder-480b-a35b-instruct",
+      "fallback_models": ["github-copilot/gpt-4.1"]
+    },
+    "quick": {
+      "model": "github-copilot/gpt-5-mini",
+      "fallback_models": ["nvidia/llama-3.3-nemotron-super-49b-v1"]
+    },
+    "unspecified-low": {
+      "model": "github-copilot/gpt-4o",
+      "fallback_models": ["github-copilot/gpt-5-mini"]
+    },
+    "unspecified-high": {
+      "model": "github-copilot/gpt-4.1",
+      "fallback_models": ["nvidia/qwen/qwen3-coder-480b-a35b-instruct"]
+    },
+    "writing": {
+      "model": "github-copilot/gpt-4.1",
+      "fallback_models": ["nvidia/llama-3.3-nemotron-super-49b-v1"]
+    },
+    "artistry": {
+      "model": "github-copilot/gpt-4o",
+      "fallback_models": ["nvidia/meta/llama-3.2-90b-vision-instruct"]
+    }
+  },
+  "background_task": {
+    "defaultConcurrency": 1,
+    "providerConcurrency": {
+      "nvidia": 2,
+      "github-copilot": 2
+    },
+    "maxDepth": 2,
+    "maxDescendants": 10,
+    "maxToolCalls": 40
+  }
+}

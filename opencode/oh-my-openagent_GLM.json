@@ -1,0 +1,153 @@
+{
+  "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-openagent/dev/assets/oh-my-openagent.schema.json",
+  "agents": {
+    "sisyphus": {
+      "model": "zai-coding-plan/glm-5.1",
+      "variant": "max",
+      "fallback_models": [
+        "github-copilot/gpt-4.1",
+        "zai-coding-plan/glm-5"
+      ]
+    },
+    "hephaestus": {
+      "model": "github-copilot/gpt-5.5",
+      "variant": "medium"
+    },
+    "oracle": {
+      "model": "zai-coding-plan/glm-5.1",
+      "variant": "high",
+      "fallback_models": [
+        "github-copilot/gpt-4.1",
+        "zai-coding-plan/glm-5"
+      ]
+    },
+    "librarian": {
+      "model": "github-copilot/gpt-5-mini",
+      "fallback_models": [
+        "github-copilot/gpt-4o",
+        "zai-coding-plan/glm-4.5"
+      ]
+    },
+    "explore": {
+      "model": "github-copilot/gpt-4o",
+      "fallback_models": [
+        "github-copilot/gpt-5-mini",
+        "zai-coding-plan/glm-4.5"
+      ]
+    },
+    "multimodal-looker": {
+      "model": "zai-coding-plan/glm-4.6v",
+      "fallback_models": [
+        "zai-coding-plan/glm-5.1"
+      ]
+    },
+    "prometheus": {
+      "model": "zai-coding-plan/glm-5.1",
+      "variant": "max",
+      "fallback_models": [
+        "github-copilot/gpt-4.1",
+        "zai-coding-plan/glm-5"
+      ]
+    },
+    "metis": {
+      "model": "zai-coding-plan/glm-5.1",
+      "variant": "max",
+      "fallback_models": [
+        "github-copilot/gpt-4.1",
+        "zai-coding-plan/glm-5"
+      ]
+    },
+    "momus": {
+      "model": "zai-coding-plan/glm-5.1",
+      "variant": "xhigh",
+      "fallback_models": [
+        "github-copilot/gpt-4.1",
+        "zai-coding-plan/glm-5"
+      ]
+    },
+    "atlas": {
+      "model": "zai-coding-plan/glm-5.1",
+      "fallback_models": [
+        "github-copilot/gpt-4.1",
+        "zai-coding-plan/glm-5"
+      ]
+    },
+    "sisyphus-junior": {
+      "model": "github-copilot/gpt-5-mini",
+      "fallback_models": [
+        "github-copilot/gpt-4o",
+        "zai-coding-plan/glm-4.5"
+      ]
+    }
+  },
+  "categories": {
+    "visual-engineering": {
+      "model": "zai-coding-plan/glm-4.6v",
+      "variant": "high",
+      "fallback_models": [
+        "zai-coding-plan/glm-5.1"
+      ]
+    },
+    "ultrabrain": {
+      "model": "zai-coding-plan/glm-5.1",
+      "variant": "high",
+      "fallback_models": [
+        "github-copilot/gpt-4.1",
+        "zai-coding-plan/glm-5"
+      ]
+    },
+    "deep": {
+      "model": "zai-coding-plan/glm-5.1",
+      "variant": "medium",
+      "fallback_models": [
+        "github-copilot/gpt-4.1",
+        "zai-coding-plan/glm-5"
+      ]
+    },
+    "artistry": {
+      "model": "github-copilot/gpt-4o",
+      "variant": "high",
+      "fallback_models": [
+        "github-copilot/gpt-5-mini",
+        "zai-coding-plan/glm-5.1"
+      ]
+    },
+    "quick": {
+      "model": "github-copilot/gpt-5-mini",
+      "fallback_models": [
+        "github-copilot/gpt-4o",
+        "zai-coding-plan/glm-4.5"
+      ]
+    },
+    "unspecified-low": {
+      "model": "github-copilot/gpt-4o",
+      "fallback_models": [
+        "github-copilot/gpt-5-mini",
+        "zai-coding-plan/glm-4.5"
+      ]
+    },
+    "unspecified-high": {
+      "model": "zai-coding-plan/glm-5.1",
+      "fallback_models": [
+        "github-copilot/gpt-4.1",
+        "zai-coding-plan/glm-5"
+      ]
+    },
+    "writing": {
+      "model": "github-copilot/gpt-4.1",
+      "fallback_models": [
+        "zai-coding-plan/glm-5.1"
+      ]
+    }
+  },
+  "background_task": {
+    "defaultConcurrency": 3,
+    "providerConcurrency": {
+      "zai-coding-plan": 2,
+      "github-copilot": 3
+    },
+    "maxDepth": 2,
+    "maxDescendants": 15,
+    "maxToolCalls": 150
+  }
+}
