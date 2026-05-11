@@ -1,0 +1,28 @@
+{
+  "name": "bug-hunters",
+  "description": "논리 오류, 엣지 케이스, 타입 에러를 병렬로 탐지하는 버그 사냥팀",
+  "lead": {
+    "kind": "subagent_type",
+    "subagent_type": "sisyphus"
+  },
+  "members": [
+    {
+      "kind": "category",
+      "name": "logic-hunter",
+      "category": "deep",
+      "prompt": "논리 버그 헌터. off-by-one 에러, 조건문 누락, 잘못된 연산자(&& vs ||), 무한 루프 가능성, 상태 전이 오류를 찾아. 각 버그에 대해 재현 시나리오를 설명해."
+    },
+    {
+      "kind": "category",
+      "name": "edge-hunter",
+      "category": "quick",
+      "prompt": "엣지 케이스 헌터. null/undefined 처리 누락, 빈 배열/문자열, 동시성 문제(race condition), 대용량 입력, 네트워크 실패 시나리오를 찾아. 경계값 테스트 케이스를 제안해."
+    },
+    {
+      "kind": "category",
+      "name": "type-hunter",
+      "category": "quick",
+      "prompt": "타입 에러 헌터. 암시적 any, 잘못된 타입 단언, optional 체이닝 누락, 제네릭 오용, enum vs literal type 불일치, runtime type 불일치를 찾아. 각 문제의 수정 코드를 제안해."
+    }
+  ]
+}

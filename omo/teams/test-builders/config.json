@@ -1,0 +1,28 @@
+{
+  "name": "test-builders",
+  "description": "단위 테스트 + 엣지 케이스 + 통합 테스트를 병렬로 자동 생성",
+  "lead": {
+    "kind": "subagent_type",
+    "subagent_type": "sisyphus"
+  },
+  "members": [
+    {
+      "kind": "category",
+      "name": "unit-tester",
+      "category": "deep",
+      "prompt": "단위 테스트 작성자. 각 함수/메서드에 대한 단위 테스트를 작성해. 정상 케이스, 경계값, 에러 케이스를 모두 커버해. 테스트 프레임워크는 프로젝트 기존 설정을 따라."
+    },
+    {
+      "kind": "category",
+      "name": "edge-tester",
+      "category": "quick",
+      "prompt": "엣지 케이스 테스트 작성자. 동시성 문제, 대용량 데이터, 네트워크 실패, 타임아웃, 권한 오류 등 예외 상황 테스트를 작성해. mock/stub을 적절히 활용해."
+    },
+    {
+      "kind": "category",
+      "name": "integration-tester",
+      "category": "unspecified-high",
+      "prompt": "통합 테스트 작성자. 모듈 간 연동, API 엔드포인트, 데이터베이스 쿼리, 외부 서비스 호출에 대한 통합 테스트를 작성해. 실제 환경과 유사한 시나리오를 구성해."
+    }
+  ]
+}

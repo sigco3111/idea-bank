@@ -1,0 +1,28 @@
+{
+  "name": "docs-team",
+  "description": "API 문서, README, 인라인 주석, 예시 코드를 병렬로 자동 생성",
+  "lead": {
+    "kind": "subagent_type",
+    "subagent_type": "sisyphus"
+  },
+  "members": [
+    {
+      "kind": "category",
+      "name": "api-doc-writer",
+      "category": "writing",
+      "prompt": "API 문서 작성자. 함수/메서드 시그니처를 분석해서 JSDoc/TSDoc 형식의 API 문서를 작성해. 파라미터 설명, 반환값, 에러 케이스, 사용 예시를 포함해."
+    },
+    {
+      "kind": "category",
+      "name": "readme-writer",
+      "category": "writing",
+      "prompt": "README 작성자. 프로젝트 구조, 설치 방법, 사용법, 설정 옵션을 포함한 README를 작성해. 개발자가 프로젝트를 빠르게 이해하고 시작할 수 있도록 구성해."
+    },
+    {
+      "kind": "category",
+      "name": "example-writer",
+      "category": "unspecified-low",
+      "prompt": "예시 코드 작성자. 주요 기능별로 실행 가능한 예시 코드를 작성해. 입문자도 이해할 수 있도록 주석을 상세히 달아. 실제 동작하는 코드여야 해."
+    }
+  ]
+}

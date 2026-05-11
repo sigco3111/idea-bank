@@ -1,0 +1,34 @@
+{
+  "name": "code-explorers",
+  "description": "코드베이스를 4가지 각도에서 병렬 탐색 — 구조, 패턴, 의존성, 테스트",
+  "lead": {
+    "kind": "subagent_type",
+    "subagent_type": "sisyphus"
+  },
+  "members": [
+    {
+      "kind": "category",
+      "name": "arch-explorer",
+      "category": "deep",
+      "prompt": "아키텍처 탐색기. 프로젝트의 전체 아키텍처를 분석해. 레이어 구조, 모듈 분리, 데이터 흐름, 핵심 추상화를 파악하고 아키텍처 다이어그램을 텍스트로 그려줘."
+    },
+    {
+      "kind": "category",
+      "name": "pattern-explorer",
+      "category": "quick",
+      "prompt": "패턴 탐색기. 코드에서 반복되는 패턴, 코딩 컨벤션, 네이밍 규칙, 에러 처리 방식, 로깅 패턴을 찾아. 프로젝트 고유의 관행을 정리해."
+    },
+    {
+      "kind": "category",
+      "name": "deps-explorer",
+      "category": "quick",
+      "prompt": "의존성 탐색기. 외부 라이브러리 사용 현황, 내부 모듈 간 의존 관계, 순환 참조, 공유 유틸리티를 찾아. 의존성 그래프를 정리해."
+    },
+    {
+      "kind": "category",
+      "name": "test-explorer",
+      "category": "unspecified-low",
+      "prompt": "테스트 탐색기. 테스트 파일 구조, 테스트 프레임워크, 커버리지 현황, 목업/스텁 패턴을 분석해. 테스트가 없는 모듈도 식별해."
+    }
+  ]
+}

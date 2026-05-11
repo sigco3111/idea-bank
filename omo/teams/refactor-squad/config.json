@@ -1,0 +1,34 @@
+{
+  "name": "refactor-squad",
+  "description": "리팩토링 대상 식별 + 패턴 제안 + 영향도 분석 + 구현 계획을 병렬로 수행",
+  "lead": {
+    "kind": "subagent_type",
+    "subagent_type": "sisyphus"
+  },
+  "members": [
+    {
+      "kind": "category",
+      "name": "smell-detector",
+      "category": "deep",
+      "prompt": "코드 스멜 탐지기. God Object, Long Method, Feature Envy, Shotgun Surgery, Dead Code, 중복 코드를 찾아. 각 스멜의 심각도(1-5)와 리팩토링 우선순위를 매겨."
+    },
+    {
+      "kind": "category",
+      "name": "pattern-advisor",
+      "category": "quick",
+      "prompt": "리팩토링 패턴 어드바이저. 발견된 코드 스멜에 대해 적용 가능한 디자인 패턴(Strategy, Factory, Observer 등)을 제안해. Before/After 코드 예시와 함께 설명해."
+    },
+    {
+      "kind": "category",
+      "name": "impact-analyzer",
+      "category": "quick",
+      "prompt": "영향도 분석기. 리팩토링 대상 코드를 사용하는 다른 모듈을 찾아. 변경 시 영향받는 파일 목록, 테스트 수정 필요 여부, 호환성 breaking change 가능성을 분석해."
+    },
+    {
+      "kind": "category",
+      "name": "deps-mapper",
+      "category": "unspecified-low",
+      "prompt": "의존성 매퍼. 리팩토링 대상의 import/dependency 그래프를 그려. 순환 의존성, 불필요한 의존성, 결합도가 높은 모듈 쌍을 식별해."
+    }
+  ]
+}
