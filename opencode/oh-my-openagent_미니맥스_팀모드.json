@@ -1,0 +1,139 @@
+{
+  "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-openagent/dev/assets/oh-my-openagent.schema.json",
+  "agents": {
+    "sisyphus": {
+      "model": "minimax-coding-plan/MiniMax-M2.7",
+      "fallback_models": [
+        "github-copilot/gpt-4.1"
+      ]
+    },
+    "hephaestus": {
+      "model": "minimax-coding-plan/MiniMax-M2.7",
+      "variant": "medium"
+    },
+    "oracle": {
+      "model": "minimax-coding-plan/MiniMax-M2.7",
+      "fallback_models": [
+        "github-copilot/gpt-4.1"
+      ]
+    },
+    "librarian": {
+      "model": "github-copilot/gpt-5-mini",
+      "fallback_models": [
+        "github-copilot/gpt-4o"
+      ]
+    },
+    "explore": {
+      "model": "github-copilot/gpt-4o",
+      "fallback_models": [
+        "github-copilot/gpt-5-mini"
+      ]
+    },
+    "multimodal-looker": {
+      "model": "minimax-coding-plan/MiniMax-M2.7",
+      "fallback_models": [
+        "github-copilot/gpt-4.1"
+      ]
+    },
+    "prometheus": {
+      "model": "minimax-coding-plan/MiniMax-M2.7",
+      "fallback_models": [
+        "github-copilot/gpt-4.1"
+      ]
+    },
+    "metis": {
+      "model": "minimax-coding-plan/MiniMax-M2.7",
+      "fallback_models": [
+        "github-copilot/gpt-4.1"
+      ]
+    },
+    "momus": {
+      "model": "minimax-coding-plan/MiniMax-M2.7",
+      "fallback_models": [
+        "github-copilot/gpt-4.1"
+      ]
+    },
+    "atlas": {
+      "model": "minimax-coding-plan/MiniMax-M2.7",
+      "fallback_models": [
+        "github-copilot/gpt-4.1"
+      ]
+    },
+    "sisyphus-junior": {
+      "model": "github-copilot/gpt-5-mini",
+      "fallback_models": [
+        "github-copilot/gpt-4o"
+      ]
+    }
+  },
+  "categories": {
+    "visual-engineering": {
+      "model": "github-copilot/gpt-4.1",
+      "fallback_models": [
+        "minimax-coding-plan/MiniMax-M2.7"
+      ]
+    },
+    "ultrabrain": {
+      "model": "minimax-coding-plan/MiniMax-M2.7",
+      "fallback_models": [
+        "github-copilot/gpt-4.1"
+      ]
+    },
+    "deep": {
+      "model": "minimax-coding-plan/MiniMax-M2.7",
+      "fallback_models": [
+        "github-copilot/gpt-4.1"
+      ]
+    },
+    "artistry": {
+      "model": "github-copilot/gpt-4o",
+      "fallback_models": [
+        "github-copilot/gpt-5-mini",
+        "minimax-coding-plan/MiniMax-M2.7"
+      ]
+    },
+    "quick": {
+      "model": "github-copilot/gpt-5-mini",
+      "fallback_models": [
+        "github-copilot/gpt-4o"
+      ]
+    },
+    "unspecified-low": {
+      "model": "github-copilot/gpt-4o",
+      "fallback_models": [
+        "github-copilot/gpt-5-mini"
+      ]
+    },
+    "unspecified-high": {
+      "model": "minimax-coding-plan/MiniMax-M2.7",
+      "fallback_models": [
+        "github-copilot/gpt-4.1"
+      ]
+    },
+    "writing": {
+      "model": "github-copilot/gpt-4.1",
+      "fallback_models": [
+        "minimax-coding-plan/MiniMax-M2.7"
+      ]
+    }
+  },
+  "team_mode": {
+    "enabled": true,
+    "tmux_visualization": true,
+    "max_parallel_members": 2,
+    "max_members": 4,
+    "max_messages_per_run": 10000,
+    "max_wall_clock_minutes": 120,
+    "max_member_turns": 500
+  },
+  "background_task": {
+    "defaultConcurrency": 2,
+    "providerConcurrency": {
+      "minimax-coding-plan": 2,
+      "github-copilot": 3
+    },
+    "maxDepth": 2,
+    "maxDescendants": 15,
+    "maxToolCalls": 150
+  }
+}
