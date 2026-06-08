@@ -3,7 +3,7 @@
   "agents": {
     "sisyphus": {
       "model": "minimax-coding-plan/MiniMax-M3",
-      "variant": "max"
+      "variant": "high"
     },
     "hephaestus": {
       "model": "minimax-coding-plan/MiniMax-M3",
@@ -52,11 +52,11 @@
   "categories": {
     "visual-engineering": {
       "model": "minimax-coding-plan/MiniMax-M3",
-      "variant": "high"
+      "variant": "medium"
     },
     "ultrabrain": {
       "model": "minimax-coding-plan/MiniMax-M3",
-      "variant": "high"
+      "variant": "medium"
     },
     "deep": {
       "model": "minimax-coding-plan/MiniMax-M3",
@@ -64,7 +64,7 @@
     },
     "artistry": {
       "model": "minimax-coding-plan/MiniMax-M3",
-      "variant": "high"
+      "variant": "medium"
     },
     "quick": {
       "model": "github-copilot/gpt-5-mini",
@@ -95,7 +95,7 @@
     "max_members": 4,
     "max_messages_per_run": 10000,
     "max_wall_clock_minutes": 120,
-    "max_member_turns": 500
+    "max_member_turns": 120
   },
   "background_task": {
     "defaultConcurrency": 3,
@@ -105,6 +105,6 @@
     },
     "maxDepth": 2,
     "maxDescendants": 15,
-    "maxToolCalls": 150
+    "maxToolCalls": 80
   }
 }
