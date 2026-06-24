@@ -40,7 +40,7 @@
 | 🎮 [deck.gl 게임](deckGL_Game_Project_Ideas.md) | deck.gl 레이어를 핵심 메커니즘으로 활용한 지도 기반 게임 | 25 |
 | 🛠️ [오픈코드 개발 유틸리티](OpenCode_Dev_Utility_Project_Ideas.md) | AI 코딩 에이전트 기반 개발 워크플로우 특화 도구 (웹 + CLI) | 50 |
 | 🎭 [Playwright E2E 자동화](Playwright_E2E_Project_Ideas.md) | Playwright 기반 E2E 테스트 자동화 도구 | 25 |
-| 🖥️ [TUI 게임](TUI_Game_Project_Ideas.md) | 터미널 UI 기반 업무 위장형 게임 (htop/vim/gdb/kubectl 외형) | 5 |
+| 🖥️ [TUI 게임](TUI_Game_Project_Ideas.md) | 터미널 UI 기반 업무 위장형 게임 (htop/vim/gdb/kubectl 외형) | 12 |
 
 > 📌 카테고리는 지속적으로 확장됩니다.
 
@@ -109,7 +109,7 @@ idea-bank/
 ├── deckGL_Game_Project_Ideas.md          # deck.gl 게임 아이디어 (25개)
 ├── OpenCode_Dev_Utility_Project_Ideas.md # 오픈코드 개발 유틸리티 아이디어 (25개)
 ├── Playwright_E2E_Project_Ideas.md      # Playwright E2E 테스트 자동화 아이디어 (25개)
-├── TUI_Game_Project_Ideas.md             # TUI 게임 아이디어 (5개)
+├── TUI_Game_Project_Ideas.md             # TUI 게임 아이디어 (12개)
 ```
 
 ---
