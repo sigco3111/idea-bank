@@ -1,0 +1,80 @@
+{
+  "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-openagent/dev/assets/oh-my-openagent.schema.json",
+  "agents": {
+    "sisyphus": {
+      "model": "openrouter/deepseek/deepseek-V4-Flash-free"
+    },
+    "oracle": {
+      "model": "openrouter/deepseek/deepseek-V4-Flash-free"
+    },
+    "librarian": {
+      "model": "openrouter/deepseek/deepseek-V4-Flash-free"
+    },
+    "explore": {
+      "model": "openrouter/deepseek/deepseek-V4-Flash-free"
+    },
+    "multimodal-looker": {
+      "model": "github-copilot/gpt-5-mini"
+    },
+    "prometheus": {
+      "model": "openrouter/deepseek/deepseek-V4-Flash-free"
+    },
+    "metis": {
+      "model": "openrouter/deepseek/deepseek-V4-Flash-free"
+    },
+    "momus": {
+      "model": "openrouter/deepseek/deepseek-V4-Flash-free"
+    },
+    "atlas": {
+      "model": "openrouter/deepseek/deepseek-V4-Flash-free"
+    },
+    "sisyphus-junior": {
+      "model": "github-copilot/gpt-5-mini"
+    }
+  },
+  "categories": {
+    "visual-engineering": {
+      "model": "github-copilot/gpt-5-mini"
+    },
+    "ultrabrain": {
+      "model": "openrouter/deepseek/deepseek-V4-Flash-free"
+    },
+    "deep": {
+      "model": "openrouter/deepseek/deepseek-V4-Flash-free"
+    },
+    "quick": {
+      "model": "github-copilot/gpt-5-mini"
+    },
+    "unspecified-low": {
+      "model": "openrouter/deepseek/deepseek-V4-Flash-free"
+    },
+    "unspecified-high": {
+      "model": "openrouter/deepseek/deepseek-V4-Flash-free"
+    },
+    "writing": {
+      "model": "github-copilot/gpt-5-mini"
+    },
+    "artistry": {
+      "model": "github-copilot/gpt-5-mini"
+    }
+  },
+    "team_mode": {
+    "enabled": true,
+    "tmux_visualization": true,
+    "max_parallel_members": 2,
+    "max_members": 4,
+    "max_messages_per_run": 10000,
+    "max_wall_clock_minutes": 120,
+    "max_member_turns": 500
+  },
+  "background_task": {
+    "defaultConcurrency": 3,
+    "providerConcurrency": {
+      "minimax-coding-plan": 3,
+      "github-copilot": 7
+    },
+    "maxDepth": 2,
+    "maxDescendants": 15,
+    "maxToolCalls": 60
+  }
+}
